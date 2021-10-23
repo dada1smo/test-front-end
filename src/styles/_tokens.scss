@@ -36,6 +36,13 @@ $montserrat: "Montserrat", Futura, Arial, sans-serif;
 $shadow-md: 0px 2px 10px rgba(0, 0, 0, 0.16);
 $shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.12);
 
+@mixin card {
+  background: $color-primary-light-0;
+  border-radius: 4px;
+  padding: 24px 32px;
+  box-shadow: $shadow-sm;
+}
+
 $paddingX: 6.25em;
 $paddingX-md: 3em;
 $paddingX-sm: 2em;

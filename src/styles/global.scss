@@ -46,5 +46,23 @@ body {
       justify-content: space-between;
       margin: 28px 0;
     }
+
+    .dashboardGrid {
+      display: flex;
+      gap: 32px;
+      margin: 20px 0;
+
+      .dashboardFilter {
+        width: 30%;
+
+        h2 {
+          margin-bottom: 20px;
+        }
+
+        .filtersCard {
+          @include tokens.card;
+        }
+      }
+    }
   }
 }

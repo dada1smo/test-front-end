@@ -21,6 +21,7 @@ import search from "../img/search.svg";
 import menu from "../img/list.svg";
 import chevronsRight from "../img/chevrons-right.svg";
 import settings from "../img/settings.svg";
+import favoriteFilled from "../img/star-filled.svg";
 
 export const iconHome = home;
 export const iconArrowDown = arrowDown;
@@ -45,3 +46,4 @@ export const iconSearch = search;
 export const iconMenu = menu;
 export const iconChevronsRight = chevronsRight;
 export const iconSettings = settings;
+export const iconFavoriteFilled = favoriteFilled;

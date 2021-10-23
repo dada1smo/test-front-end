@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "product": "Insigni",
+        "quantity": 220,
+        "name": "brand"
+    },
+    {
+        "id": 2,
+        "product": "Samsung",
+        "quantity": 120,
+        "name": "brand"
+    },
+    {
+        "id": 3,
+        "product": "Apple",
+        "quantity": 462,
+        "name": "brand"
+    },
+    {
+        "id": 4,
+        "product": "HP",
+        "quantity": 6556,
+        "name": "brand"
+    },
+    {
+        "id": 5,
+        "product": "Sony",
+        "quantity": 120,
+        "name": "brand"
+    },
+    {
+        "id": 6,
+        "product": "Metra",
+        "quantity": 353,
+        "name": "brand"
+    },
+    {
+        "id": 7,
+        "product": "Dyne",
+        "quantity": 45,
+        "name": "brand"
+    },
+    {
+        "id": 8,
+        "product": "LG",
+        "quantity": 456,
+        "name": "brand"
+    },
+    {
+        "id": 9,
+        "product": "Canon",
+        "quantity": 55,
+        "name": "brand"
+    },
+    {
+        "id": 10,
+        "product": "Speck",
+        "quantity": 10,
+        "name": "brand"
+    }
+]

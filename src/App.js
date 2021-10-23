@@ -12,6 +12,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Breadcrumbs from "./components/breadcrumbs";
 import { Button } from "./components/button";
 import { iconSettings } from "./helpers/icons";
+import Typography from "./components/typography";
+import Filters from "./components/filters";
 
 function App() {
   const [isNavOpen, openNav] = useOpenNav(false);
@@ -50,6 +52,14 @@ function App() {
         <div className="dashboardBreadcrumbs">
           <Breadcrumbs />
           <Button color="btnPrimaryDark" shape="btnRound" icon={iconSettings} />
+        </div>
+        <div className="dashboardGrid">
+          <div className="dashboardFilter">
+            <Typography tag="h2">Filters</Typography>
+            <div className="filtersCard">
+              <Filters />
+            </div>
+          </div>
         </div>
       </main>
     </div>

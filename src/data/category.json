@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "product": "Cell Phones",
+        "quantity": 1920,
+        "name": "category"
+    },
+    {
+        "id": 2,
+        "product": "Computer & Tablets",
+        "quantity": 1820,
+        "name": "category"
+    },
+    {
+        "id": 3,
+        "product": "Cell Phone Accessories",
+        "quantity": 462,
+        "name": "category"
+    },
+    {
+        "id": 4,
+        "product": "Appliances",
+        "quantity": 6556,
+        "name": "category"
+    },
+    {
+        "id": 5,
+        "product": "Audio",
+        "quantity": 120,
+        "name": "category"
+    },
+    {
+        "id": 6,
+        "product": "iPhone Accessories",
+        "quantity": 353,
+        "name": "category"
+    },
+    {
+        "id": 7,
+        "product": "Cameras & Camcorders",
+        "quantity": 45,
+        "name": "category"
+    },
+    {
+        "id": 8,
+        "product": "iPhone Cases & Clips",
+        "quantity": 456,
+        "name": "category"
+    },
+    {
+        "id": 9,
+        "product": "TV & Home Theater",
+        "quantity": 55,
+        "name": "category"
+    },
+    {
+        "id": 10,
+        "product": "Small Kitchen Appliances",
+        "quantity": 10,
+        "name": "category"
+    }
+]
