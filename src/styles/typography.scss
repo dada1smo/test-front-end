@@ -1,0 +1,21 @@
+@use "tokens";
+@use "breakpoints";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: tokens.$color-neutral-mid-700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

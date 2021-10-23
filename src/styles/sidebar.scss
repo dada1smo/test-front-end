@@ -1,0 +1,39 @@
+@use "tokens";
+@use "breakpoints";
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 32px 20px 32px 24px;
+  background-color: tokens.$color-primary-light-0;
+  box-shadow: tokens.$shadow-md;
+
+  @include breakpoints.sm {
+    z-index: 4444;
+  }
+
+  section {
+    margin-bottom: 2.4rem;
+  }
+
+  .sidebarLogo {
+    width: 100%;
+
+    img {
+      width: 160px;
+    }
+  }
+
+  .dashboardSelect {
+    margin-bottom: 2rem;
+  }
+
+  h6 {
+    padding: 0 8px;
+    margin-bottom: 0.8rem;
+  }
+}

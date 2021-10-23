@@ -1,0 +1,134 @@
+@use "tokens";
+@use "breakpoints";
+
+.topbar {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: tokens.$color-primary-light-0;
+  border-radius: 8px;
+  box-shadow: tokens.$shadow-sm;
+
+  .topbarActions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    button {
+      border-radius: 100%;
+      padding: 4px;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgba(tokens.$color-primary-blue-600, 0.1);
+      }
+
+      @include breakpoints.md {
+        display: none;
+      }
+
+      img {
+        height: 16px;
+        width: 16px;
+      }
+
+      &.mobileMenuButton {
+        display: none;
+
+        @include breakpoints.sm {
+          display: inline-flex;
+        }
+      }
+
+      &.favorite {
+        &:hover {
+          background: rgba(tokens.$color-secondary-yellow-500, 0.1);
+        }
+
+        @include breakpoints.md {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+
+  .topbarUser {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    button {
+      border-radius: 100%;
+      padding: 4px;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgba(tokens.$color-primary-blue-600, 0.1);
+      }
+
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+
+    .languageSelect {
+      display: inline-flex;
+      padding: 4px 12px;
+      background-color: tokens.$color-neutral-light-300;
+      border-radius: 444px;
+      transition: 0.3s;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      &:hover {
+        background: rgba(tokens.$color-primary-blue-600, 0.1);
+      }
+
+      @include breakpoints.sm {
+        display: none;
+      }
+    }
+
+    .userButton {
+      height: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        height: 32px;
+        width: 32px;
+        border-radius: 100%;
+      }
+
+      .userInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .userName {
+          font-size: 1.4rem;
+          font-weight: 500;
+          text-align: right;
+
+          @include breakpoints.sm {
+            display: none;
+          }
+        }
+
+        .userActivityStatus {
+          font-size: 1.2rem;
+          text-align: right;
+          color: tokens.$color-secondary-green-500;
+
+          @include breakpoints.sm {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

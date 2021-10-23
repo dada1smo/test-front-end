@@ -1,0 +1,64 @@
+@use "breakpoints";
+
+// Colors
+// Primary colors
+$color-primary-blue-600: #0052cc;
+$color-primary-red-500: #ff000a;
+$color-primary-dark-900: #091e42;
+$color-primary-light-0: #ffffff;
+
+// Secondary colors
+$color-secondary-green-500: #36b37e;
+$color-secondary-yellow-500: #ffab00;
+$color-secondary-purple-500: #6554c0;
+
+// Neutral colors
+$color-neutral-dark-800: #172b4d;
+$color-neutral-dark-700: #253858;
+$color-neutral-dark-600: #344563;
+$color-neutral-dark-500: #42526e;
+
+$color-neutral-mid-900: #505f79;
+$color-neutral-mid-800: #5e6c84;
+$color-neutral-mid-700: #6b778c;
+$color-neutral-mid-600: #97a0af;
+$color-neutral-mid-500: #a5adba;
+$color-neutral-mid-400: #b3bac5;
+
+$color-neutral-light-500: #b3bac5;
+$color-neutral-light-400: #c1c7d0;
+$color-neutral-light-300: #ebecf0;
+$color-neutral-light-200: #f4f5f7;
+$color-neutral-light-100: #fafbfc;
+
+$montserrat: "Montserrat", Futura, Arial, sans-serif;
+
+$shadow-md: 0px 2px 10px rgba(0, 0, 0, 0.16);
+$shadow-sm: 0px 2px 8px rgba(0, 0, 0, 0.12);
+
+$paddingX: 6.25em;
+$paddingX-md: 3em;
+$paddingX-sm: 2em;
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 60px;
+
+  @include breakpoints.md {
+    column-gap: 0;
+  }
+}
+
+@mixin sectionPadding {
+  padding: 0 $paddingX 0;
+
+  @include breakpoints.md {
+    padding: 0 $paddingX-md 0;
+  }
+
+  @include breakpoints.sm {
+    padding: 0 $paddingX-sm 0;
+  }
+}

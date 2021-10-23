@@ -1,0 +1,42 @@
+@use "reset";
+@use "tokens";
+@use "breakpoints";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: tokens.$montserrat;
+}
+
+.dashboard {
+  position: relative;
+  padding-left: 280px;
+  min-height: 100vh;
+  background: tokens.$color-neutral-light-300;
+
+  @include breakpoints.sm {
+    padding-left: 0;
+  }
+
+  main {
+    padding: 32px 36px;
+    height: 100%;
+
+    .backdrop {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(tokens.$color-neutral-mid-500, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      z-index: 100;
+
+      @include breakpoints.sm {
+        display: block;
+      }
+    }
+  }
+}

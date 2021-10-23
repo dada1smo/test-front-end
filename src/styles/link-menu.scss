@@ -1,0 +1,47 @@
+@use "tokens";
+@use "breakpoints";
+
+.linkMenu {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0;
+  transition: 0.3s;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      font-size: 1.4rem;
+      color: tokens.$color-primary-dark-900;
+    }
+  }
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  button {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.selectedArea {
+    background-color: tokens.$color-neutral-light-300;
+  }
+
+  &:hover {
+    background: rgba(tokens.$color-primary-blue-600, 0.1);
+  }
+}
