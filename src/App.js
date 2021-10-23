@@ -9,6 +9,9 @@ import Topbar from "./components/topbar";
 import { useOpenNav } from "./hooks/use-open-nav";
 import useWindowSize from "./hooks/use-window-size";
 import { motion, AnimatePresence } from "framer-motion";
+import Breadcrumbs from "./components/breadcrumbs";
+import { Button } from "./components/button";
+import { iconSettings } from "./helpers/icons";
 
 function App() {
   const [isNavOpen, openNav] = useOpenNav(false);
@@ -44,6 +47,10 @@ function App() {
           </AnimatePresence>
         )}
         <Topbar handleCloseNav={handleCloseNav} />
+        <div className="dashboardBreadcrumbs">
+          <Breadcrumbs />
+          <Button color="btnPrimaryDark" shape="btnRound" icon={iconSettings} />
+        </div>
       </main>
     </div>
   );

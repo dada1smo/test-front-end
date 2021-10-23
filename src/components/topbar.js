@@ -54,8 +54,8 @@ export default function Topbar(props) {
         </button>
         <a href="/" className="userButton">
           <div className="userInfo">
-            <span className="userName">Jane Doe</span>
-            <span className="userActivityStatus">Available</span>
+            <div className="userName">Jane Doe</div>
+            <div className="userActivityStatus">Available</div>
           </div>
           <img src={profileImg} alt="" />
         </a>

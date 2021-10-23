@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: tokens.$montserrat;
+  color: tokens.$color-primary-dark-900;
 }
 
 .dashboard {
@@ -37,6 +38,13 @@ body {
       @include breakpoints.sm {
         display: block;
       }
+    }
+
+    .dashboardBreadcrumbs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 28px 0;
     }
   }
 }

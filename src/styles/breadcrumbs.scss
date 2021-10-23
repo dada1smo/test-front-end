@@ -1,0 +1,34 @@
+@use "tokens";
+@use "breakpoints";
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .verticalDivider {
+    height: 100%;
+    width: 1px;
+    background: tokens.$color-neutral-light-500;
+  }
+
+  .breadcrumbsTrail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a {
+      font-size: 12px;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .chevronsRight {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
