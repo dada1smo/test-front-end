@@ -55,6 +55,10 @@ body {
       .dashboardFilter {
         width: 30%;
 
+        @include breakpoints.lg {
+          display: none;
+        }
+
         h2 {
           margin-bottom: 20px;
         }

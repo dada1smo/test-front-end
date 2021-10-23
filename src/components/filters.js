@@ -5,6 +5,7 @@ import "rc-slider/assets/index.css";
 import categoryData from "../data/category.json";
 import brandData from "../data/brand.json";
 import { iconFavorite, iconFavoriteFilled } from "../helpers/icons";
+import { Button } from "./button";
 
 function CheckboxList(props) {
   const items = props.items;
@@ -119,6 +120,7 @@ export default function Filters() {
           <div className="starSelected"></div>
         </div>
       </div>
+      <Button color="btnErrorLight" shape="btnFull" label="Clear all filters" />
     </div>
   );
 }

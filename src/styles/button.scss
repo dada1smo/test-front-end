@@ -6,9 +6,10 @@
   background-color: transparent;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
+  font-weight: 500;
   transition: 0.3s;
   position: relative;
+  font-size: 1.6rem;
 
   img {
     width: 18px;
@@ -24,9 +25,24 @@
     }
   }
 
+  &.btnErrorLight {
+    background: rgba(tokens.$color-primary-red-500, 0.2);
+    color: tokens.$color-primary-dark-900;
+
+    &:hover {
+      background: rgba(tokens.$color-primary-red-500, 0.4);
+    }
+  }
+
   &.btnRound {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+  }
+
+  &.btnFull {
+    border-radius: 4px;
+    width: 100%;
+    padding: 16px 20px;
   }
 }
