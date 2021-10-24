@@ -12,7 +12,7 @@ function CheckboxList(props) {
   const listItems = items.map((item) => (
     <div className="checkboxContainer" key={item.id}>
       <input type="checkbox" id={item.product} name={item.name} />
-      <label for={item.product}>
+      <label htmlFor={item.product}>
         <span>{item.product}</span>
         <span>{item.quantity}</span>
       </label>
@@ -26,30 +26,30 @@ export default function Filters() {
   return (
     <div className="filters">
       <Typography tag="h2">Multi Range</Typography>
-      <div class="multiRange">
+      <div className="multiRange">
         <div className="radioContainer">
           <input type="radio" id="tier1" name="value" value="$10" />
-          <label for="tier1">$10</label>
+          <label htmlFor="tier1">$10</label>
           <div className="radioCircle"></div>
         </div>
         <div className="radioContainer">
           <input type="radio" id="tier2" name="value" value="$10-$100" />
-          <label for="tier2">$10-$100</label>
+          <label htmlFor="tier2">$10-$100</label>
           <div className="radioCircle"></div>
         </div>
         <div className="radioContainer">
           <input type="radio" id="tier3" name="value" value="$100-$500" />
-          <label for="tier3">$100-$500</label>
+          <label htmlFor="tier3">$100-$500</label>
           <div className="radioCircle"></div>
         </div>
         <div className="radioContainer">
           <input type="radio" id="tier4" name="value" value="$500" />
-          <label for="tier4">$500</label>
+          <label htmlFor="tier4">$500</label>
           <div className="radioCircle"></div>
         </div>
         <div className="radioContainer">
           <input type="radio" id="tier5" name="value" value="all" />
-          <label for="tier5">All</label>
+          <label htmlFor="tier5">All</label>
           <div className="radioCircle"></div>
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function Filters() {
       <div className="rating">
         <div className="ratingContainer">
           <input type="radio" id="5stars" name="rating" value="5stars" />
-          <label for="5stars">
+          <label htmlFor="5stars">
             <div className="starRating">
               <img src={iconFavoriteFilled} alt="" />
               <img src={iconFavoriteFilled} alt="" />
@@ -91,7 +91,7 @@ export default function Filters() {
         </div>
         <div className="ratingContainer">
           <input type="radio" id="4stars" name="rating" value="4stars" />
-          <label for="4stars">
+          <label htmlFor="4stars">
             <div className="starRating">
               <img src={iconFavoriteFilled} alt="" />
               <img src={iconFavoriteFilled} alt="" />
@@ -106,7 +106,7 @@ export default function Filters() {
         </div>
         <div className="ratingContainer">
           <input type="radio" id="3stars" name="rating" value="3stars" />
-          <label for="3stars">
+          <label htmlFor="3stars">
             <div className="starRating">
               <img src={iconFavoriteFilled} alt="" />
               <img src={iconFavoriteFilled} alt="" />
