@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Watch Series 4 GPS",
+        "manufacturer": "Apple",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "rating": 3.5,
+        "price": "$339",
+        "shipping": "Free Shipping"
+    },
+    {
+        "id": 2,
+        "name": "Apple Watch Series 4 GPS",
+        "manufacturer": "Apple",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "rating": 3.5,
+        "price": "$339",
+        "shipping": "Free Shipping"
+    },
+    {
+        "id": 3,
+        "name": "Apple Watch Series 4 GPS",
+        "manufacturer": "Apple",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "rating": 3.5,
+        "price": "$339",
+        "shipping": "Free Shipping"
+    },
+    {
+        "id": 4,
+        "name": "Apple Watch Series 4 GPS",
+        "manufacturer": "Apple",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "rating": 3.5,
+        "price": "$339",
+        "shipping": "Free Shipping"
+    }
+]

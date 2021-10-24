@@ -6,10 +6,19 @@
   align-items: center;
   gap: 16px;
 
+  @include breakpoints.sm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .verticalDivider {
     height: 32px;
     width: 1px;
     background: tokens.$color-neutral-light-500;
+
+    @include breakpoints.sm {
+      display: none;
+    }
   }
 
   .breadcrumbsTrail {

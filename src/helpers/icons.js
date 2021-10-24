@@ -22,6 +22,9 @@ import menu from "../img/list.svg";
 import chevronsRight from "../img/chevrons-right.svg";
 import settings from "../img/settings.svg";
 import favoriteFilled from "../img/star-filled.svg";
+import shipping from "../img/shopping-cart.svg";
+import heart from "../img/heart.svg";
+import shoppingBag from "../img/shopping-bag.svg";
 
 export const iconHome = home;
 export const iconArrowDown = arrowDown;
@@ -47,3 +50,6 @@ export const iconMenu = menu;
 export const iconChevronsRight = chevronsRight;
 export const iconSettings = settings;
 export const iconFavoriteFilled = favoriteFilled;
+export const iconShipping = shipping;
+export const iconHeart = heart;
+export const iconShoppingBag = shoppingBag;

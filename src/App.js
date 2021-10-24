@@ -15,6 +15,9 @@ import { iconMenu, iconSettings, iconTable } from "./helpers/icons";
 import Typography from "./components/typography";
 import Filters from "./components/filters";
 import Dropdown from "./components/dropdown";
+import Searchbar from "./components/searchbar";
+import ProductCard from "./components/product-card";
+import productList from "./data/products.json";
 
 function App() {
   const [isNavOpen, openNav] = useOpenNav(false);
@@ -89,7 +92,8 @@ function App() {
                 />
               </div>
             </div>
-            <div className="productCard"></div>
+            <Searchbar />
+            <ProductCard products={productList} />
           </div>
         </div>
       </main>

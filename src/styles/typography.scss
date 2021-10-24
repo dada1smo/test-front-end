@@ -24,10 +24,27 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: tokens.$color-primary-blue-600;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 h6 {
   font-size: 1.4rem;
   font-weight: 500;
   color: tokens.$color-neutral-mid-700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
