@@ -104,6 +104,14 @@ body {
           .viewOptions {
             display: flex;
             gap: 12px;
+
+            .responsiveFilters {
+              display: none;
+
+              @include breakpoints.md {
+                display: block;
+              }
+            }
           }
         }
       }

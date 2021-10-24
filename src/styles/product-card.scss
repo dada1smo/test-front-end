@@ -22,6 +22,9 @@
 
     @include breakpoints.md {
       flex-direction: column;
+    }
+
+    @include breakpoints.sm {
       border-right: none;
       border-bottom: 1px solid tokens.$color-neutral-light-300;
     }

@@ -1,0 +1,55 @@
+@use "tokens";
+@use "breakpoints";
+
+.modalWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 4444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 50vw;
+  height: 90vh;
+  @include tokens.card;
+  padding: 20px 6px 96px 6px;
+  position: relative;
+
+  @include breakpoints.sm {
+    width: 96vw;
+  }
+
+  .modalHeader {
+    padding: 0 12px 8px;
+  }
+
+  .overflow {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0px 12px;
+  }
+
+  .modalFooter {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: tokens.$color-primary-light-0;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px -16px 12px 0px rgb(0 0 0 / 16%);
+    padding: 0 8px;
+    border-radius: 0 0 4px 4px;
+  }
+}

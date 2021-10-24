@@ -16,16 +16,22 @@ import Typography from "./components/typography";
 import Filters from "./components/filters";
 import Dropdown from "./components/dropdown";
 import Searchbar from "./components/searchbar";
-import ProductCard from "./components/product-card";
-import productList from "./data/products.json";
+import ProductListing from "./components/product-listing";
+import { useState } from "react";
+import Modal from "./components/modal";
 
 function App() {
   const [isNavOpen, openNav] = useOpenNav(false);
   const size = useWindowSize();
   const mobileDevice = size.width < 768;
+  const [modal, setModal] = useState(false);
 
   function handleCloseNav() {
     openNav();
+  }
+
+  function handleCloseModal() {
+    setModal();
   }
 
   const viewOptions = [
@@ -90,13 +96,44 @@ function App() {
                   shape="btnSquare"
                   icon={iconMenu}
                 />
+                <div className="responsiveFilters">
+                  <Button
+                    color="btnPrimaryLight"
+                    shape="btnRegular"
+                    label="Filters"
+                    onClick={() => setModal((modal) => !modal)}
+                  />
+                </div>
               </div>
             </div>
             <Searchbar />
-            <ProductCard products={productList} />
+            <ProductListing />
           </div>
         </div>
+        {modal && (
+          <AnimatePresence>
+            <motion.button
+              className="backdrop"
+              onClick={handleCloseModal}
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+              }}
+              exit={{
+                opacity: 0,
+              }}
+              transition={{ type: "spring", bounce: 0, duration: 0.3 }}
+            ></motion.button>
+          </AnimatePresence>
+        )}
       </main>
+      <Modal
+        title="Filters"
+        buttonLabel="Apply filters"
+        {...{ modal, setModal }}
+      >
+        <Filters />
+      </Modal>
     </div>
   );
 }

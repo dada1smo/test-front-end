@@ -70,6 +70,16 @@
     }
   }
 
+  &.btnRegular {
+    border-radius: 8px;
+    padding: 8px 16px;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
   &.btnFull {
     border-radius: 8px;
     width: 100%;

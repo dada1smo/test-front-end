@@ -1,6 +1,7 @@
 import home from "../img/home.svg";
 import arrowDown from "../img/chevron-down.svg";
 import arrowRight from "../img/chevron-right.svg";
+import arrowLeft from "../img/chevron-left.svg";
 import ecommerce from "../img/circle.svg";
 import email from "../img/mail.svg";
 import chat from "../img/message-square.svg";
@@ -29,6 +30,7 @@ import shoppingBag from "../img/shopping-bag.svg";
 export const iconHome = home;
 export const iconArrowDown = arrowDown;
 export const iconArrowRight = arrowRight;
+export const iconArrowLeft = arrowLeft;
 export const iconEcommerce = ecommerce;
 export const iconEmail = email;
 export const iconChat = chat;

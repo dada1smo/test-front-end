@@ -28,9 +28,9 @@ import {
 } from "../helpers/icons.js";
 
 export default function Sidebar(props) {
-  function sendFalse() {
-    props.handleCloseNav(false);
-  }
+  // function sendFalse() {
+  //   props.handleCloseNav(false);
+  // }
 
   return (
     <motion.aside
@@ -48,12 +48,12 @@ export default function Sidebar(props) {
         <img src={sidebarLogo} alt="Logo Gran Cursos" />
       </section>
       <section className="dashboardSelect">
-        <button
+        {/* <button
           aria-label="Abrir menu de navegação"
           onClick={() => sendFalse()}
         >
           Menu
-        </button>
+        </button> */}
         <LinkMenu
           whereTo="/"
           iconLeft={iconHome}

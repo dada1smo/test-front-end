@@ -12,7 +12,7 @@ import { Button } from "../components/button";
 export default function ProductCard(props) {
   const products = props.products;
   const listProducts = products.map((product) => (
-    <div className="productCard" key={products.id}>
+    <div className="productCard" key={product.id}>
       <div className="productDetails">
         <img src={productImg} alt="" />
         <div className="productBody">
