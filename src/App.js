@@ -11,9 +11,10 @@ import useWindowSize from "./hooks/use-window-size";
 import { motion, AnimatePresence } from "framer-motion";
 import Breadcrumbs from "./components/breadcrumbs";
 import { Button } from "./components/button";
-import { iconSettings } from "./helpers/icons";
+import { iconMenu, iconSettings, iconTable } from "./helpers/icons";
 import Typography from "./components/typography";
 import Filters from "./components/filters";
+import Dropdown from "./components/dropdown";
 
 function App() {
   const [isNavOpen, openNav] = useOpenNav(false);
@@ -23,6 +24,17 @@ function App() {
   function handleCloseNav() {
     openNav();
   }
+
+  const viewOptions = [
+    {
+      id: 1,
+      name: "List",
+    },
+    {
+      id: 2,
+      name: "Grid",
+    },
+  ];
 
   return (
     <div className="dashboard">
@@ -59,6 +71,25 @@ function App() {
             <div className="filtersCard">
               <Filters />
             </div>
+          </div>
+          <div className="dashboardSearch">
+            <div className="dashboardResults">
+              <Typography tag="h2">7,618 results found in 5ms</Typography>
+              <div className="viewOptions">
+                <Dropdown options={viewOptions} selectName="Default" />
+                <Button
+                  color="btnPrimaryLight"
+                  shape="btnSquare"
+                  icon={iconTable}
+                />
+                <Button
+                  color="btnPrimaryLight"
+                  shape="btnSquare"
+                  icon={iconMenu}
+                />
+              </div>
+            </div>
+            <div className="productCard"></div>
           </div>
         </div>
       </main>
