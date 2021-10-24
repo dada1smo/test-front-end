@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Test Front-end Gran Cursos
+
+![alt text](public/test-preview.png "Implemented UI preview (desktop and mobile)")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
